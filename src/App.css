@@ -1,6 +1,31 @@
+:root {
+  --color-primary: #f00;
+  --color-secondary: #0f0;
+  --color-tertiary: #00f;
+  /* bootstrap color */
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --black: #000;
+  --white: #fff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --bg: #271663;
+}
 
-body{
+body {
+  background-color: var(--light);
   font-family: 'Kanit', sans-serif;
+  color: var(--light);
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: var(--dark);
 }
 
 .App {
@@ -40,4 +65,103 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+/* !config tag */
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: larger;
+}
+
+a:hover {
+  color: var(--white);
+}
+
+li {
+  list-style: none;
+}
+
+/* !bootstrap */
+.img-fluid {
+  width: 100%;
+}
+.container-fluid {
+  padding: 0 0 0 0;
+}
+
+/* !navbar */
+.navbar {
+  padding: 10px;
+  height: 100px;
+}
+.nav-menu {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
+.nav-menu-item {
+  margin: 0 5px 0 5px;
+}
+
+.nav-menu-item.active {
+  background-color: #271663;
+  color: white;
+  border-radius: 35px;
+  padding: 7px;
+}
+
+.nav-menu-item.active:hover{
+  background-color: #543ea4;
+}
+
+/* !header */
+.header {
+  padding: 0 0 0 0;
+}
+
+/* !profile */
+.profile {
+  background-color: var(--gray-200);
+  margin-top: 15px;
+  padding: 40px;
+}
+.profile-info {
+  text-indent: 90px;
+}
+
+/* !education */
+.education {
+  margin-top: 20px;
+}
+.education-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-item {
+  /* height: 300px;
+  width: 300px; */
+  background-color: var(--white);
+  margin: 5px;
+  max-width: 350px;
+  width: 550px;
+  height: 350px;
+}
+
+@media (max-width: 412px) {
+  .edu-item {
+    width: 90%;
+  }
+}
+
+/* !mywork */
+.mywork {
+  background-color: var(--gray-200);
 }
